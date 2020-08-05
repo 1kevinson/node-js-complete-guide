@@ -1,11 +1,8 @@
-# node-js-complete-guide
-Node Js - GraphQL - Mongo DB - Mongoose - Rest API
-
 Welcome in this Node Js Repository
 
 # Coding Metrics
 
-
+[![time tracker](https://wakatime.com/badge/github/1kevinson/node-js-complete-guide.svg)](https://wakatime.com/badge/github/1kevinson/node-js-complete-guide)
 
 # About
 
