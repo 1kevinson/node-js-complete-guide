@@ -9,5 +9,11 @@
     "start-server": "node app.js"
   },
   "author": "Arsene Kevin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@szmarczak/http-timer": "^4.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
