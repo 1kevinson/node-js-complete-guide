@@ -5,13 +5,14 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "node_modules/.bin/nodemon app.js",
     "start-server": "node app.js"
   },
   "author": "Arsene Kevin",
   "license": "ISC",
   "dependencies": {
-    "@szmarczak/http-timer": "^4.0.5"
+    "@szmarczak/http-timer": "^4.0.5",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
