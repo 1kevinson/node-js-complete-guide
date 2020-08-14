@@ -1,21 +1,26 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-//Request goes from the top to bottom
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", (req, res, next) => {
-  console.log("always works");
   next();
 });
 
-app.use("/add", (req, res, next) => {
-  console.log("in middleware");
-  res.send("<h1>The 'Add page'</h1>");
+app.use("/add-product", (req, res, next) => {
+  res.send(
+    "<form action='/product' method='POST'><input type='text' name='title'><button type='submit'>Add Product</button></form>"
+  );
+});
+
+app.use("/product", (req, res, next) => {
+  console.log(req.body);
+  res.redirect("/");
 });
 
 app.use("/", (req, res, next) => {
-  console.log("in another middleware");
   res.send("<h1>Hello from express</h1>");
 });
 
